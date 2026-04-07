@@ -127,12 +127,20 @@ function multiplos(){
     let b = parseInt(document.getElementById("numero2").value)
     let multiplos = []
 
-    for(let i = a; i <=b; i++){     /*a y b muestran los extremos*/
+    if (a > b){
+        let temp = a
+        a = b
+        b = temp
+    }
+
+    for(let i = a; i <= b; i++){
         if (i % 6 == 0){
             multiplos.push(i)
         }
     }
-    document.getElementById("resultadoMultiplos").textContent = "Múltiplos de 6: " + multiplos
+
+    document.getElementById("resultadoMultiplos").textContent =
+        "Entre " + a + " y " + b + " Los Múltiplos de 6 son : " + multiplos
 }
 
 function arreglo20(){
