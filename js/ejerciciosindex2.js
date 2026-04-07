@@ -5,7 +5,7 @@ function IVA(){
     let iva=(v1*v2)/100
     let total= iva+v1
     //mostrar en input
-    document.getElementById("resultadoIva").textContent = "Total precio: " + total
+    document.getElementById("resultadoIva").value  = "Total precio: " + total
 
 }
 
@@ -87,7 +87,7 @@ function Fibonacci(){
         a = b
         b = otro
     }
-    document.getElementById("resultadoF").textContent = serie
+    document.getElementById("resultadoF").textContent  = serie
 }
 
 function MayorIgual(){
@@ -101,7 +101,9 @@ function MayorIgual(){
     else if (n1 == n2){
         s="Los numeros son iguales"
     }
-    document.getElementById("resultadoN").textContent=s
+
+    document.getElementById("resultadoN2").value = s
+
 }
 
 function calcularF(){
@@ -117,6 +119,7 @@ function calcularF(){
         resultadoF = resultadoF * i
     }
     document.getElementById("resultadoFactorial").textContent= "Resultado: " + resultadoF
+    document.getElementById("resultadoFactorial2").textContent= "El factorial de " + numeroF + " es: " + resultadoF
 }
 
 function multiplos(){
@@ -129,7 +132,7 @@ function multiplos(){
             multiplos.push(i)
         }
     }
-    document.getElementById("resultadoMultiplos").textContent=multiplos
+    document.getElementById("resultadoMultiplos").textContent = "Múltiplos de 6: " + multiplos
 }
 
 function arreglo20(){
