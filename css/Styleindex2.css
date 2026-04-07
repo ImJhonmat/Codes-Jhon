@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: red;
+}
+h1{
+    text-align: center;
+    color: rgb(88, 192, 78);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)/*Divide 3 columnas*/;
+    gap: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgb(14, 17, 17);
+}
+
+header{
+    background-color: rgb(20, 25, 26);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.espacio{
+    height: 300px;
+    padding: 20px;
+    background-color: azure;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+
+#lado{
+    width: 50%;
+}
+#iva{
+    width: 13%;
+}
+#numerodosdigitos{
+    width: 42%;
+}
+#papas{
+width: 45%   
+}
+#huevitos{
+width: 43%
+}
+#lacebolla{
+width: 42%
+}
+#salida{
+    width: 82%;
+}
+#factorial{
+    width: 40%;
+}
+#a{
+    width: 10%;
+}
+#b{
+    width: 10%;
+}
+#c{
+    width: 10%;
+}
+#n1{
+    width: 18%;
+}
+#n2{
+    width: 18%;
+}
